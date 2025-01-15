@@ -40,6 +40,14 @@ const logTime = (name, days) => {
   document.querySelector('p:nth-child(2)').innerHTML = `${name}'s time to train is: ${days} days`;
 };
 
+const logEventTwo = (name, event) => {
+  document.querySelector('p:nth-child(3)').innerHTML = `${name}'s event is: ${event}`;
+};
+
+const logTimeTwo = (name, days) => {
+  document.querySelector('p:nth-child(4)').innerHTML = `${name}'s time to train is: ${days} days`;
+};
+
 const event = getRandEvent();
 const days = getTrainingDays(event);
 // Define a `name` variable. Use it as an argument after updating logEvent and logTime 
@@ -51,5 +59,5 @@ const event2 = getRandEvent();
 const days2 = getTrainingDays(event2);
 const name2 = 'Warren';
 
-logEvent(name2, event2);
-logTime(name2, days2);
+logEventTwo(name2, event2);
+logTimeTwo(name2, days2);
